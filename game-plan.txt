@@ -1,0 +1,15 @@
+Game Plan
+----------
+Step 1: Basic Game State
+Step 2: Display Game State
+Step 3: Update Game State
+Step 3: User Input
+Step 4: Game Logic
+
+Game Ideas
+------------
+snake shoots lasers
+loop around screen like pac-man
+drop bombs
+computer player with random movement
+
