@@ -3,15 +3,15 @@
 var game = null;
 
 function setup(){
-    var width = 100;
-    var height = 100;
+    var width = 400;
+    var height = 400;
     game = createGameState();
     frameRate(2);
     createCanvas(width, height); 
 }
 
 function draw(){
-    
+    background(0);
 }
 
 var pointSize = 10;
