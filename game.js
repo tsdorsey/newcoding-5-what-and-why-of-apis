@@ -1,6 +1,24 @@
 // functions
 
-function createGameState(){}
+function createGameState(){
+    var game = {};
+    game.playerX = 5;
+    game.playerY = 5;
+
+    var grid = [];
+    grid.push([1,1,1,1,1]);
+    grid.push([1,0,0,0,1]);
+    grid.push([1,0,0,0,1]);
+    grid.push([1,0,0,0,1]);
+    grid.push([1,0,0,0,1]);
+    grid.push([1,0,0,0,1]);
+    grid.push([1,1,1,1,1]);
+
+    game.grid = grid;
+
+    return game;
+
+}
 function createEmptyGrid(){}
 function createLevel(){}
 function setRandomCoin(){}
