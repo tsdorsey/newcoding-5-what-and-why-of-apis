@@ -11,29 +11,21 @@ function setup(){
 
 function draw(){
     background("yellow");
-    fill("red");
-    drawPoint(0,0);
-    fill("blue");
-    drawPoint(1,0);
-    fill("green");
-    drawPoint(2,0);
-    drawPoint(3,0);
-    drawPoint(1,1);
-    drawPoint(2,1);
-    drawPoint(3,1);
+    drawGameState(game);
 }
 
 // converts logical grid into physical display
 function drawPoint(x,y,colorIndex){
     ellipse(
-        x * pointSpacing,
-        y * pointSpacing,
+        x * pointSpacing + margin,
+        y * pointSpacing + margin,
         pointSize);
 }
 
 // physical units
-var pointSize = 10;
-var pointSpacing = 20;
+var pointSize = 40;
+var pointSpacing = 50;
+var margin = 50;
 var colors = [
     "#3f51b5",
     "#03a9f5",

@@ -22,7 +22,13 @@ function createGameState(){
 function createEmptyGrid(){}
 function createLevel(){}
 function setRandomCoin(){}
-function drawGameState(){}
+
+function drawGameState(game){
+    // draw the player
+    fill("red");
+    drawPoint(game.playerX, game.playerY);
+}
+
 function updateGameState(){}
 function addNextCoin(){}
 function handleKeyboard(){}
