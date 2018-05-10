@@ -3,6 +3,8 @@
 function createGameState(){
     var game = {};
 
+    game.score = 0;
+
     game.isDead = false;
     game.playerX = 2;
     game.playerY = 2;
@@ -44,9 +46,13 @@ function setRandomCoin(game){
         var y = game.coinY;
         var hitWall = (game.grid[y][x] == 1);
 
-        var hitPlayer = (game.coinX == game.playerX && game.coinY == game.playerY);
+        var hitPlayer = hitCoin(game);
         collided = hitWall || hitPlayer;
     }
+}
+
+function hitCoin(game){
+    return (game.coinX == game.playerX && game.coinY == game.playerY);
 }
 
 function drawGameState(game){
@@ -63,6 +69,9 @@ function drawGameState(game){
     // draw the coin
     drawPoint(game.coinX, game.coinY,3);
 
+    // draw score
+    fill("red");
+    text(`Score: ${game.score}`,10, 10);
 
 }
 
@@ -71,6 +80,12 @@ function updateGameState(game){
     var x = game.playerX;
     var y = game.playerY;
     if (game.grid[y][x] == 1) game.isDead = true;
+
+    // check if player hit coin
+    if (hitCoin(game)){
+        game.score += 100;
+        setRandomCoin(game);
+    }
 }
 
 function addNextCoin(){}
