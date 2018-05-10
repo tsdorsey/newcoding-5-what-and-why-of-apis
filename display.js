@@ -16,6 +16,7 @@ function draw(){
 
 // converts logical grid into physical display
 function drawPoint(x,y,colorIndex){
+    fill(colors[colorIndex]);
     ellipse(
         x * pointSpacing + margin,
         y * pointSpacing + margin,

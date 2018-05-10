@@ -16,6 +16,9 @@ function createGameState(){
 
     game.grid = grid;
 
+    game.rows = grid.length;
+    game.cols = grid[0].length;
+
     return game;
 
 }
@@ -24,9 +27,17 @@ function createLevel(){}
 function setRandomCoin(){}
 
 function drawGameState(game){
+    // draw the walls
+    for(var c = 0; c < game.cols; c++){
+        for(var r = 0; r < game.rows; r++){
+            drawPoint(c, r, game.grid[r][c]);
+        }    
+    }
+    
     // draw the player
     fill("red");
-    drawPoint(game.playerX, game.playerY);
+    drawPoint(game.playerX, game.playerY,2);
+
 }
 
 function updateGameState(){}
