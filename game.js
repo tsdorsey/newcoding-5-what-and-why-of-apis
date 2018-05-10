@@ -2,8 +2,10 @@
 
 function createGameState(){
     var game = {};
-    game.playerX = 5;
-    game.playerY = 5;
+
+    game.isDead = false;
+    game.playerX = 2;
+    game.playerY = 2;
 
     var grid = [];
     grid.push([1,1,1,1,1]);
@@ -40,7 +42,13 @@ function drawGameState(game){
 
 }
 
-function updateGameState(){}
+function updateGameState(game){
+    // check if player hit wall
+    var x = game.playerX;
+    var y = game.playerY;
+    if (game.grid[y][x] == 1) game.isDead = true;
+}
+
 function addNextCoin(){}
 function handleKeyboard(){}
 function checkPlayerPosition(){}

@@ -10,7 +10,13 @@ function setup(){
 }
 
 function draw(){
-    background("yellow");
+    updateGameState(game);
+
+    if (game.isDead)
+        background("black");
+    else
+        background("yellow");
+        
     drawGameState(game);
 }
 
