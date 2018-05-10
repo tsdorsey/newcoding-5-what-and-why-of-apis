@@ -9,7 +9,7 @@ function createGameState(){
     grid.push([1,1,1,1,1]);
     grid.push([1,0,0,0,1]);
     grid.push([1,0,0,0,1]);
-    grid.push([1,0,0,0,1]);
+    grid.push([0,0,0,0,0]);
     grid.push([1,0,0,0,1]);
     grid.push([1,0,0,0,1]);
     grid.push([1,1,1,1,1]);

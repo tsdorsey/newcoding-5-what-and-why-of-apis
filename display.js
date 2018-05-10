@@ -5,7 +5,7 @@ function setup(){
     var width = 400;
     var height = 400;
     game = createGameState();
-    frameRate(2);
+    frameRate(15);
     createCanvas(width, height); 
 }
 
@@ -40,4 +40,10 @@ function keyPressed() {
     if (keyCode == 40) game.playerY++;
     if (keyCode == LEFT_ARROW) game.playerX--;
     if (keyCode == RIGHT_ARROW) game.playerX++;
+
+    if (game.playerX >= game.cols) game.playerX = 0;
+    if (game.playerY >= game.rows) game.playerY = 0;
+
+    if (game.playerX < 0) game.playerX = game.cols - 1;
+    if (game.playerY < 0) game.playerY = game.rows - 1;
 }
