@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+table {
+  width: 95%;
+  max-width: 800px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr img {
+  height: 150px;
+  width: auto;
+}

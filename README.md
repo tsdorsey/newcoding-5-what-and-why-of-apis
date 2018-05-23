@@ -2,11 +2,10 @@ Workshop: **APIs and Databases** Trevor Dorsey
 
 #### The Plan
 
-1.  Make an API to store Pokemon based on LocalStorage.
-1.  Make an API to search our database by Pokemon name.
-1.  Make an API to store a list of Pokemon as a team.
-1.  Make an API to store a list of teams.
-1.  Display the Pokemon team on a page.
+1.  Use the Pokedex library to query the Pokemon API.
+2.  Make an API to search our database by Pokemon name.
+3.  Make an API to store a list of Pokemon as a team.
+4.  Display the Pokemon team on the page.
 
 #### Chrome Plugin
 

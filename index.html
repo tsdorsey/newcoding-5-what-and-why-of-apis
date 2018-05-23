@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>Pokemon Team Builder</title>
+    <link rel="stylesheet" href="style.css"/>
     <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
     <script src="api.js"></script>
     <script src="ui.js"></script>
   </head>
-  <body style="margin: 0; overflow: hidden; text-align: center; font-family: sans-serif;">
+  <body>
     <h1>Pokemon Team Builder</h1>
 
     <div id="teams">
@@ -16,8 +17,8 @@
     </div>
 
     <div id="search">
-      <input type="search"></input>
-      <button>Search</button>
+      <input id="search-input"></input>
+      <button onClick="doSearch();">Search</button>
       <div id="search-results">
       </div>
     </div>
