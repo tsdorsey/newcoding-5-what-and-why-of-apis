@@ -1,0 +1,4 @@
+1. Make an API to store and search for Pokemon based on LocalStorage.
+2. Make an API to store a list of Pokemon as a team.
+3. Make an API to store a list of teams.
+4. Display the Pokemon team on a page.

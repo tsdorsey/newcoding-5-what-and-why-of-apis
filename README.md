@@ -1,1 +1,1 @@
-Workshop: **APIs** Trevor Dorsey
+Workshop: **APIs and Databases** Trevor Dorsey

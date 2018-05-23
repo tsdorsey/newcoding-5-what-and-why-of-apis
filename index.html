@@ -1,14 +1,26 @@
 <!doctype html>
 <html>
   <head>
-    <title>The Game</title>
-    <script src="p5/p5.js"></script>
-    <script type="text/javascript" src="input.js"></script>
-    <script type="text/javascript" src="game.js"></script>
-    <script type="text/javascript" src="display.js"></script>
+    <title>Pokemon Team Builder</title>
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+    <script src="api.js"></script>
+    <script src="ui.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden; text-align: center; font-family: sans-serif;">
-    <h1>The Game</h1>
-    <div id="contents"></div>
+    <h1>Pokemon Team Builder</h1>
+
+    <div id="teams">
+      <div id="teams-display">
+      </div>
+      <button>Make New Team</button>
+    </div>
+
+    <div id="search">
+      <input type="search"></input>
+      <button>Search</button>
+      <div id="search-results">
+      </div>
+    </div>
+    
   </body>
 </html>
